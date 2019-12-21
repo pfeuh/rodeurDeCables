@@ -28,6 +28,25 @@ X ~ 13 -550 0 300 R 40 40 6 1 I
 ENDDRAW
 ENDDEF
 #
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C
 #
 DEF Device_C C 0 10 N Y 1 F N
@@ -141,28 +160,6 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SparkFun-Batteries_BATTERY-9V
-#
-DEF SparkFun-Batteries_BATTERY-9V BT 0 40 N N 1 L N
-F0 "BT" 0 170 45 H V L BNN
-F1 "SparkFun-Batteries_BATTERY-9V" 0 -250 45 H V L BNN
-F2 "BATTCON_9V" 0 250 20 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "BATT-10855" 0 300 60 H V C CNN
-$FPLIST
- *BATTCON_9V*
-$ENDFPLIST
-DRAW
-P 2 1 0 0 -100 0 -60 0 N
-P 2 1 0 0 -50 150 -50 -150 N
-P 2 1 0 0 0 50 0 -50 N
-P 2 1 0 0 50 150 50 -150 N
-P 2 1 0 0 100 50 100 -50 N
-X + + -200 0 100 R 40 40 1 1 W
-X - - 200 0 100 L 40 40 1 1 W
-ENDDRAW
-ENDDEF
-#
 # Timer_NE555
 #
 DEF Timer_NE555 U 0 20 Y Y 1 F N
@@ -214,6 +211,28 @@ DRAW
 C 0 75 25 0 1 0 N
 P 2 0 1 0 0 0 0 50 N
 X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# rodeurDeCables-rescue_BATTERY-9V-SparkFun-Batteries
+#
+DEF rodeurDeCables-rescue_BATTERY-9V-SparkFun-Batteries BT 0 40 N N 1 L N
+F0 "BT" 0 170 45 H V L BNN
+F1 "rodeurDeCables-rescue_BATTERY-9V-SparkFun-Batteries" 0 -250 45 H V L BNN
+F2 "BATTCON_9V" 0 250 20 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "BATT-10855" 0 300 60 H V C CNN
+$FPLIST
+ *BATTCON_9V*
+$ENDFPLIST
+DRAW
+P 2 1 0 0 -100 0 -60 0 N
+P 2 1 0 0 -50 150 -50 -150 N
+P 2 1 0 0 0 50 0 -50 N
+P 2 1 0 0 50 150 50 -150 N
+P 2 1 0 0 100 50 100 -50 N
+X + + -200 0 100 R 40 40 1 1 W
+X - - 200 0 100 L 40 40 1 1 W
 ENDDRAW
 ENDDEF
 #
